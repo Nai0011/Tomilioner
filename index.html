@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لعبة التاجر</title>
-    <link rel="stylesheet" href="aa.css"> <!-- رابط ملف CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لعبة التاجر</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="شعار اللعبة" id="game-logo">
-        <h1>لعبة التاجر</h1>
-    </header>
-    
-    <section id="user-info">
-        <p>الاسم: <span id="user-name">انت</span> 👤</p>
-        <p>الرصيد: <span id="user-balance">1000 ريال</span> 💵</p>
-        <p>الأسهم: <span id="user-stocks">100</span> 📈</p>
-        <p>الموظفين: <span id="user-employees">لا يوجد</span> 👨‍💼</p>
-    </section>
 
-    <section id="buttons">
-        <button onclick="fileCase()">📑 رفع قضية ضد شركتي</button>
-        <button onclick="viewLawyers()">👩‍⚖️ عرض المحاميين</button>
-        <button onclick="viewCompetitors()">🏢 عرض الشركات المنافسة</button>
-        <button onclick="rateCustomer()">⭐ تقييم العملاء</button>
-        <button onclick="viewRichList()">💰 عرض قائمة الأغنياء</button>
-    </section>
+  <header>
+    <h1>لعبة التاجر</h1>
+  </header>
 
-    <section id="game-actions">
-        <p>اختر السنة:</p>
-        <select id="year-selection">
-            <option value="1980">1980</option>
-            <option value="1990">1990</option>
-            <option value="2000">2000</option>
-            <option value="2020">2020</option>
-        </select>
-        <button onclick="startGame()">ابدأ اللعبة</button>
-    </section>
+  <div id="gameContent">
+    <div id="welcomeMessage">
+      <p>مرحباً بك في لعبة التاجر!</p>
+      <button onclick="startGame()">ابدأ اللعبة</button>
+    </div>
 
-    <script src="aa.js"></script> <!-- رابط ملف JavaScript -->
+    <div id="gameControls" style="display:none;">
+      <h3 id="playerName">الاسم: أنت</h3>
+      <p>الرصيد: <span id="playerMoney">1000</span> ريال</p>
+      <p>الأسهم: <span id="playerShares">100</span></p>
+      <p>الموظفين: <span id="employeeCount">0</span></p>
+      <p>المحاميين: <span id="lawyerCount">0</span></p>
+
+      <button onclick="hireEmployee()">توظيف موظف</button>
+      <button onclick="evaluateCompany()">تقييم الشركة</button>
+      <button onclick="addCompetitor()">إضافة شركة منافسة</button>
+      <button onclick="raiseIssue()">رفع قضية</button>
+      <button onclick="importProduct()">استيراد منتج</button>
+      <button onclick="sellProduct()">بيع منتج</button>
+      <button onclick="startCarFactory()">فتح مصنع سيارات</button>
+      <button onclick="displayCars()">عرض السيارات</button>
+      <button onclick="buyCar()">شراء سيارة</button>
+      <button onclick="hackCompetitor()">اختراق شركة منافسة</button>
+      <button onclick="protectServer()">حماية السيرفر</button>
+
+      <div id="companyDetails" style="display:none;">
+        <h3>تفاصيل الشركة</h3>
+        <p>اسم الشركة: <span id="companyName">My Company</span></p>
+        <p>المنتجات: <span id="productList">Furniture, Electronics</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
 </body>
 </html>
