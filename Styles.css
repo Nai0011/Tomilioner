@@ -1,49 +1,44 @@
 body {
-    background-color: #f0f8ff; /* خلفية سماوية ناعمة */
-    font-family: 'Arial', sans-serif; /* الخط المستخدم في اللعبة */
-    text-align: center;
-    color: #333; /* لون النص */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
-button {
-    background-color: #4CAF50; /* لون الخلفية للأزرار */
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    border: none;
-}
-
-button:hover {
-    background-color: #45a049; /* تغيير اللون عند مرور الفأرة */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
 h1 {
-    color: #2f4f4f;
-    font-size: 36px;
+  font-size: 2em;
 }
 
-#game-logo {
-    width: 100px; /* عرض الشعار */
-    height: auto;
-    margin-bottom: 20px;
+#gameControls {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-#user-info p {
-    font-size: 18px;
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#buttons button {
-    font-size: 20px;
+button:hover {
+  background-color: #0056b3;
 }
 
-#game-actions select {
-    font-size: 18px;
-    padding: 8px;
-    margin: 10px;
+#companyDetails {
+  margin-top: 20px;
+}
+
+#welcomeMessage {
+  margin-top: 50px;
 }
