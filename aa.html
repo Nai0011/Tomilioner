@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة التاجر - الشركة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>لعبة التاجر</h1>
+        
+        <div id="CEO-info">
+            <p>الاسم: <span id="ceo-name">أنت</span></p>
+            <p>الرصيد: <span id="money-display">1000 ريال</span></p>
+            <p>الأسهم: <span id="company-stocks">100</span> سهم</p>
+        </div>
+
+        <h2>الموظفين:</h2>
+        <ul id="employee-list"></ul>
+
+        <h2>المحاميين:</h2>
+        <ul id="lawyers-list"></ul>
+
+        <h2>قائمة الشركات المنافسة:</h2>
+        <ul id="competitor-list"></ul>
+
+        <h2>رفع القضايا:</h2>
+        <button onclick="fileLawsuit()">رفع قضية ضد شركتي</button>
+
+        <h2>تقييم العملاء:</h2>
+        <button onclick="rateCustomer()">تقييم العميل</button>
+
+        <h2>ترتيب قائمة الأغنياء:</h2>
+        <ol id="wealthy-list"></ol>
+
+        <p id="season-description"></p>
+
+        <script src="game.js"></script>
+    </div>
+</body>
+	</html>
