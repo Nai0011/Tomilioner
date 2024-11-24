@@ -1,0 +1,49 @@
+body {
+    background-color: #f0f8ff; /* خلفية سماوية ناعمة */
+    font-family: 'Arial', sans-serif; /* الخط المستخدم في اللعبة */
+    text-align: center;
+    color: #333; /* لون النص */
+}
+
+button {
+    background-color: #4CAF50; /* لون الخلفية للأزرار */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049; /* تغيير اللون عند مرور الفأرة */
+}
+
+h1 {
+    color: #2f4f4f;
+    font-size: 36px;
+}
+
+#game-logo {
+    width: 100px; /* عرض الشعار */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#user-info p {
+    font-size: 18px;
+}
+
+#buttons button {
+    font-size: 20px;
+}
+
+#game-actions select {
+    font-size: 18px;
+    padding: 8px;
+    margin: 10px;
+}
